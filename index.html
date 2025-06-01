@@ -133,6 +133,11 @@
             text-align: center;
         }
 
+        .contact-item a {
+            color: #fff !important;
+            text-decoration: underline;
+        }
+
         .main-content {
             display: grid;
             grid-template-columns: 1fr 2fr;
@@ -499,6 +504,10 @@
                         <i class="fas fa-envelope"></i>
                         <span>arumullasivakrishna17@gmail.com</span>
                     </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-globe"></i>
+                        <a href="https://arumullasivakrishna.vercel.app/">arumullasivakrishna.vercel.app</a>
+                    </div>
                 </div>
             </div>
         </header>
@@ -801,31 +810,8 @@
             </main>
         </div>
     </div>
-    <button class="download-btn" title="Download Resume as PDF" onclick="downloadResume()">
+    <!-- <button class="download-btn" title="Download Resume as PDF" onclick="downloadResume()">
         <i class="fas fa-download"></i>
-    </button>
-    <script>
-        // Function to download resume as PDF
-        function downloadResume() {
-    const element = document.getElementById('resume');
-    element.classList.add('pdf-rendering');
-
-    const opt = {
-      margin: 0,
-      filename: 'Arumulla_Sivakrishna_Resume.pdf',
-      image: { type: 'jpeg', quality: 0.98 },
-      html2canvas: { scale: 2, useCORS: true },
-      jsPDF: { unit: 'px', format: [794, 1123], orientation: 'portrait' }
-    };
-
-    html2pdf().set(opt).from(element).save().then(() => {
-      element.classList.remove('pdf-rendering');
-    }).catch(err => {
-      console.error("PDF generation error:", err);
-      alert("Failed to generate PDF.");
-      element.classList.remove('pdf-rendering');
-    });
-  }
-    </script>
+    </button> -->
 </body>
 </html>
