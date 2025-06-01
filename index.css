@@ -466,6 +466,10 @@ body {
 }
 
 @media (max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
     .main-content {
         grid-template-columns: 1fr;
     }
@@ -481,6 +485,7 @@ body {
 
     .resume-container {
         margin: 10px;
+        width: fit-content;
     }
 
     .header,
